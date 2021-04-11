@@ -8,7 +8,7 @@ fun main(args: Array<String>) {
 
 
    */
-
+   /*
     //rangos
     // rangos crea rango del 1..10 y lo imprime
     var oneToTen = 1..10
@@ -24,6 +24,45 @@ fun main(args: Array<String>) {
     //  rango y lo recorre
     for (letras in 'A'..'D') {
         println(letras)
+    }
+
+    */
+
+// Break
+
+    for (i in 1..3){
+        println("El numero es: $i")
+
+        for (j in 1..4){
+            if (j.equals(3)) break
+            println("El segundo numero es: $j")
+        }
+    }
+
+    println("Segundo Ejemplo")
+
+    TerminaTodoElCiclo@ for (i in 1..3){
+        println("\ni: $i")
+        for (j in 1..3){
+            println("\nj: $j")
+            for (k in 1..5){
+                if (k.equals(3)) break@TerminaTodoElCiclo
+                println("k: $k")
+            }
+        }
+    }
+
+    // continue y label
+
+    esComoBreak@ for (i in 1..3){
+        println("\ni: $i")
+        for (j in 1..3){
+            println("\nj: $j")
+            for (k in 1..5){
+                if (k.equals(3)) continue@esComoBreak
+                println("k: $k")
+            }
+        }
     }
 
 
