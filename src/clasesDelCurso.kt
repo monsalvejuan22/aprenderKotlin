@@ -9,13 +9,23 @@ fun main(args: Array<String>) {
 
    */
 
-
+    //rangos
     // rangos crea rango del 1..10 y lo imprime
-
     var oneToTen = 1..10
 
     for (i in oneToTen){
         println(i)
     }
+
+
+    // declaro Rango A..E
+    val aToC ='A'..'E'
+
+    //  rango y lo recorre
+    for (letras in 'A'..'D') {
+        println(letras)
+    }
+
+
 
 }
