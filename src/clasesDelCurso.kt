@@ -1,4 +1,5 @@
 import java.awt.List
+import kotlin.reflect.jvm.internal.impl.utils.NumbersKt
 
 fun main(args: Array<String>) {
 
@@ -91,6 +92,7 @@ fun main(args: Array<String>) {
 
      */
 
+    /*
     //Array
     val countries = arrayOf("India","Mexico","Colombia","Chile", )
 
@@ -123,5 +125,21 @@ fun main(args: Array<String>) {
     for (a in arrayObjects){
         println("Array: $a")
     }
+
+     */
+
+    //Funciones
+
+    val numbers = intArrayOf(6,6,23,9,2,3,2)
+
+    fun averageNumbers(numbers: IntArray): Int{     // funcion que saca el promedio de un array
+        var sum = 0
+        for (num in numbers) {
+            sum += num
+        }
+        return sum / numbers.size
+    }
+
+    println("El promedio de los numeros es: ${averageNumbers(numbers)}")
 }
 
