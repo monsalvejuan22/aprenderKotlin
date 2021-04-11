@@ -69,6 +69,8 @@ fun main(args: Array<String>) {
     }
      */
 
+    /*
+
     // Null llamado seguro
     var compute: String?                    // Declaro variable que acepte null
     compute = null                          // DECLARO NULL
@@ -87,4 +89,39 @@ fun main(args: Array<String>) {
     val listWithoutNulls = listWithNulls.filterNotNull()
     println("Numeros validos en la lista: ${listWithoutNulls}")
 
+     */
+
+    //Array
+    val countries = arrayOf("India","Mexico","Colombia","Chile", )
+
+    // Promedio de numeros
+    val numbers = intArrayOf(6,6,23,9,2,3,2)
+    var sum = 0
+    for (num in numbers) {
+        sum += num
+    }
+    var average = sum / numbers.size
+    println("Promedio: $average")
+
+    var arrayObjects = arrayOf(1,2,3)
+    var intPrimitive = arrayObjects.toIntArray()
+
+    val suma = arrayObjects.sum()
+    println("La suma del array es: $suma")
+
+    arrayObjects = arrayObjects.plus(4) // Agrega un elemento con valor 4
+    for (a in arrayObjects){
+        println("Array: $a")
+    }
+
+    arrayObjects = arrayObjects.reversedArray() // Invierte los valores del array
+    for (a in arrayObjects){
+        println("Array: $a")
+    }
+
+    arrayObjects.reverse()      // Funcion que invierte el array
+    for (a in arrayObjects){
+        println("Array: $a")
+    }
 }
+
