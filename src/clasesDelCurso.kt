@@ -1,3 +1,5 @@
+import java.awt.List
+
 fun main(args: Array<String>) {
 
   /*
@@ -28,6 +30,7 @@ fun main(args: Array<String>) {
 
     */
 
+    /*
 // Break
 
     for (i in 1..3){
@@ -64,7 +67,24 @@ fun main(args: Array<String>) {
             }
         }
     }
+     */
 
+    // Null llamado seguro
+    var compute: String?                    // Declaro variable que acepte null
+    compute = null                          // DECLARO NULL
+    var longitud: Int? = compute?.length    //DECLARO longitud de la variable computer
+    println("LONGITUD : $longitud")
 
+    // Operador Elvis
+
+    var teclado: String? =null
+    val longitudTeclado: Int = teclado?.length ?: 0  // Si el valor de teclado es null devulve 0
+    println("Longitud del teclado: $longitudTeclado")
+
+    val listWithNulls = listOf<Int?>(7, null, null, 4)
+    println("Lista con Null: ${listWithNulls}")
+
+    val listWithoutNulls = listWithNulls.filterNotNull()
+    println("Numeros validos en la lista: ${listWithoutNulls}")
 
 }
