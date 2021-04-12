@@ -10,7 +10,7 @@ fun main(args: Array<String>) {
     println(a.compareTo(b)) // compara si a es mayor muestra 1, si es igual 0, y si a es menor muestra -1
 
    */
-    
+
    /*
     //rangos
     // rangos crea rango del 1..10 y lo imprime
