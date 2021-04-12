@@ -3,7 +3,7 @@ import kotlin.reflect.jvm.internal.impl.utils.NumbersKt
 
 fun main(args: Array<String>) {
 
-  /*
+    /*
     var a = 5
     var b = 6
     println(a.plus(b)) // Suma a + b y lo imprime
@@ -11,7 +11,7 @@ fun main(args: Array<String>) {
 
 
    */
-   /*
+    /*
     //rangos
     // rangos crea rango del 1..10 y lo imprime
     var oneToTen = 1..10
@@ -128,6 +128,7 @@ fun main(args: Array<String>) {
 
      */
 
+    /*
     //Funciones
 
     val numbers = intArrayOf(6,6,23,9,2,3,2)
@@ -141,5 +142,23 @@ fun main(args: Array<String>) {
     }
 
     println("El promedio de los numeros es: ${averageNumbers(numbers)}")
+
+     */
+
+    //funcion Lambda
+
+    val saludo = { println("Hola Mundo")}
+    saludo()
+
+    val calculateNumber = { n: Int ->
+        when (n){
+            in 1..3     ->  println("El numero esta entre 1 y 3")
+            in 4..7     ->  println("El numero esta entre 4 y 7")
+            in 8..10    ->  println("El numero esta entre 8 y 10")
+        }
+    }
+    println(calculateNumber(9))
+
+
 }
 
