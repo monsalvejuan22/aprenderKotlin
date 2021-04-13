@@ -1,3 +1,4 @@
+import model.Camara
 import java.awt.List
 import kotlin.reflect.jvm.internal.impl.utils.NumbersKt
 
@@ -145,6 +146,7 @@ fun main(args: Array<String>) {
 
      */
 
+    /*
     //funcion Lambda
 
     val saludo = { println("Hola Mundo")}
@@ -158,6 +160,13 @@ fun main(args: Array<String>) {
         }
     }
     println(calculateNumber(9))
+     */
+
+    val camara = Camara()
+    camara.turnOn ()
+    println(camara.camaraStatus())
+
+
 
 
 }
