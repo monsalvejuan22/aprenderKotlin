@@ -1,6 +1,5 @@
 import model.Camara
-import java.awt.List
-import kotlin.reflect.jvm.internal.impl.utils.NumbersKt
+import model.Shoe
 
 fun main(args: Array<String>) {
 
@@ -165,6 +164,19 @@ fun main(args: Array<String>) {
     val camara = Camara()
     camara.turnOn ()
     println(camara.camaraStatus())
+
+    camara.setResolution(1080)      // set se usa para enviar dato
+    println("La resolucion es: ${camara.getResolution()} ")    // get se usa para traer datos
+
+    var shoe = Shoe()
+
+    shoe.size = 36
+    println(shoe.size)
+
+    shoe.model ="zapatos de tacon"
+    println(shoe.model)
+
+
 
 
 
