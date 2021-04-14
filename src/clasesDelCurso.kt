@@ -1,4 +1,5 @@
 import model.Camara
+import model.Movie
 import model.Shoe
 
 fun main(args: Array<String>) {
@@ -161,6 +162,9 @@ fun main(args: Array<String>) {
     println(calculateNumber(9))
      */
 
+    /*
+    //Clases
+
     val camara = Camara()
     camara.turnOn ()
     println(camara.camaraStatus())
@@ -175,6 +179,16 @@ fun main(args: Array<String>) {
 
     shoe.model ="zapatos de tacon"
     println(shoe.model)
+
+     */
+
+    // Data Class y constructor
+
+    var movie = Movie("Coco", "Pixar", 120)  // Contructor primario en el segundario se coloca Init{}
+    println("Movie")
+    println(movie.title)
+    println(movie.creator)
+    println("${movie.duration} min")
 
 
 
