@@ -182,6 +182,8 @@ fun main(args: Array<String>) {
 
      */
 
+    /*
+
     // Data Class y constructor
 
     var movie = Movie("Coco", "Pixar", 120)  // Contructor primario en el segundario se coloca Init{}
@@ -190,10 +192,14 @@ fun main(args: Array<String>) {
     println(movie.creator)
     println("${movie.duration} min")
 
+     */
 
+    // Open class y herencia
 
+    var shoe = Shoe("Shoe", "Blue Shoes", 12345, "Praga")
+    println("Shoe: ${shoe}")
 
-
+    println(shoe.create())
 
 }
 
