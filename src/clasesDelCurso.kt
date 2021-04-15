@@ -193,13 +193,30 @@ fun main(args: Array<String>) {
     println("${movie.duration} min")
 
      */
-
+    /*
     // Open class y herencia
 
     var shoe = Shoe("Shoe", "Blue Shoes", 12345, "Praga")
     println("Shoe: ${shoe}")
 
     println(shoe.create())
+     */
+
+    // ejercicio de calculadora con funcion de orden superior 
+
+    var resultado = calculadora(1,2,3, ::multiplicar)
+    println("El resultado es: $resultado")
+
+    println("El resultado de la resta fue: ${calculadora(5, 6, 7, ::restar)}")
+
+    println("El resultado de la suma fue: ${calculadora(5, 6, 7, ::sumar)}")
 
 }
 
+fun calculadora(a: Int, b: Int, c:Int, operacion: (Int, Int, Int) -> Int ): Int {
+    return operacion(a,b,c)
+}
+
+fun sumar(a: Int, b: Int, c: Int) = a + b + c
+fun restar(a: Int, b: Int, c: Int) = a - b - c
+fun multiplicar(a: Int, b: Int, c: Int) = a * b * c
